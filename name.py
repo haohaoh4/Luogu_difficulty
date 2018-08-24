@@ -3,7 +3,6 @@ import requests
 diff = {0: "入门难度", 1: "普及-", 2: "普及/提高-", 3: "普及+/提高", 4: "提高+/省选-",
         5: "省选/NOI-", 6: "NOI/NOI+/CTSC", 7:"ERROR"}
 
-
 def get_difficulty(pid):
 	req = requests.request("get", "http://www.luogu.org/problemnew/show/%s" % pid)
 	if (str(req) != "<Response [200]>"):
@@ -40,10 +39,3 @@ def search(uid):
 	return times
 
 
-ds = search(27793)
-i = 0
-for p in ds:
-	print("%s:%s" % (diff[i], p))
-	if(i>7):
-		continue
-	i = i + 1
