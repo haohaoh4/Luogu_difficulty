@@ -30,6 +30,7 @@ class user:
 			end = req.find("\">", begin)
 			if req[begin:end] == "<head>\n<meta charset=\"utf-8":
 				break
-			print(req[begin:end])
+			if diff_debug:
+				print(req[begin:end])
 			self.done_problems.insert(-1, Problem(req[begin:end]))
 
