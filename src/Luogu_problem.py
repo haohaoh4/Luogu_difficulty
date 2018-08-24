@@ -30,8 +30,9 @@ class Problem:
 		if diff_debug:
 			print(i)
 		if i > 7:
-			return 7
-		return i
+			self.difficulty = 7
+		else:
+			self.difficulty = i
 
 	def get_extra(self):
 		raise Exception("incoming")
