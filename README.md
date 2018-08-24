@@ -17,3 +17,7 @@ for p in problems:
 		continue
 	i = i + 1
 ```
+
+## License
+
+MIT License
