@@ -1,6 +1,6 @@
 import requests
 
-diff = {0: "入门难度", 1: "普及-", 2: "普及/提高-", 3: "普及+/提高", 4: "提高+/省选-",
+diff_name = {0: "入门难度", 1: "普及-", 2: "普及/提高-", 3: "普及+/提高", 4: "提高+/省选-",
         5: "省选/NOI-", 6: "NOI/NOI+/CTSC", 7:"ERROR"}
 
 def get_difficulty(pid):
@@ -9,8 +9,8 @@ def get_difficulty(pid):
 		raise IOError("Can't access to Luogu.")
 	req = req.content.decode('utf-8')
 	i = 0
-	for string in diff:
-		if (req.find(diff[string])!=-1):
+	for string in diff_name:
+		if (req.find(diff_name[string])!=-1):
 			break
 		i = i + 1
 	#print(i)
@@ -37,4 +37,3 @@ def search(uid):
 		d = get_difficulty(req[begin:end])
 		times[d] = times[d] + 1
 	return times
-
