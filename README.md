@@ -1,33 +1,16 @@
 # Luogu_difficulty
 统计做题难度。
 
-使用requests库
+## 使用方法
 
-Example:
+如果你还没有安装python，你首先需要[安装](https://www.python.org/)它。
 
-```Python
-import src.Luogu_diff as diff
-
-
-def main():
-	someone = diff.user(37617)
-	times = [0, 0, 0, 0, 0, 0, 0, 0]
-
-	for p in someone.done_problems:
-		print("%s:%s" % (p, p.difficulty))
-		if p.difficulty<8:
-			times[p.difficulty] = times[p.difficulty] + 1
-		else:
-			times[7] = times[7] + 1
-	i = 0
-	for n in times:
-		print("%s:%s" % (diff.diff_name[i], n))
-		i = i + 1
-
-main()
+准备好以后，打开文件所在目录(即"cd 目录")，然后输入：
 
 ```
-使用src.Luogu_diff.Debug_mode()
+pip install requests
+python main.py
+```
 
 ## License
 
