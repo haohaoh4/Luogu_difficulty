@@ -12,6 +12,8 @@ pip install requests
 python main.py
 ```
 
+即可。接着，你可以输入你的用户名或者uid，大约等待10秒到一分钟，即可完成。
+
 ## License
 
 MIT License
