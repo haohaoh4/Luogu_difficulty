@@ -3,6 +3,17 @@ import logging
 from src.Luogu_problem import Problem
 logger = logging.getLogger(__name__)
 
+header = {
+	'Host': 'www.luogu.org',
+	'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0',
+	'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+	'Accept-Language': 'zh-CN,zh;q=0.8',
+	'Accept-Encoding': 'gzip, deflate',
+	'Referer': 'http://www.baidu.com',
+	'Connection': 'keep-alive',
+	'Cache-Control': 'max-age=0',
+}
+
 
 class User:
 	uid = 0
@@ -12,9 +23,9 @@ class User:
 	rating = 0
 
 	def __init__(self, uid):
-		req = requests.get("https://www.luogu.org/space/ajax_getuid?username=%s" % uid)
+		req = requests.get("http://www.luogu.org/space/ajax_getuid?username=%s" % uid, headers=header)
 		if str(req) != "<Response [200]>":
-			logger.Error("Can't access to Luogu %s." % ("http://www.luogu.org/problemnew/show/%s" % self.pid))
+			logger.error("Can't access to Luogu %s." % ("https://www.luogu.org/space/ajax_getuid?username=%s" % uid))
 			raise IOError("Can't access to Luogu.")
 		req = str(req.content.decode("utf-8"))
 		if req.find("404") != -1:
@@ -41,7 +52,7 @@ class User:
 
 	def get_base_info(self):
 		url = "http://www.luogu.org/space/show?uid=%s" % self.uid
-		req = requests.get(url)
+		req = requests.get(url, headers=header)
 		if str(req) != "<Response [200]>":
 			logger.error("Can't access to Luogu.requests info %s.URL is %s" % (req, url))
 			raise IOError("Can't access to Luogu.")
