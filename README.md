@@ -18,3 +18,9 @@ python main.exe
 ## License
 
 MIT License
+
+## TODO List:
+
+[]增加用户成绩追踪的功能。
+
+[]增加对CF等其它Oj的支持。
