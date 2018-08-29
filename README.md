@@ -3,7 +3,7 @@
 
 ## 使用方法
 
-如果你是windows用户，无需安装python，直接下载编译好的[https://github.com/haohaoh4/Luogu_difficulty/file/main.exe](main.exe)运行即可。
+如果你是windows用户，无需安装python，直接下载编译好的[main.exe](https://github.com/haohaoh4/Luogu_difficulty/file/main.exe)运行即可。
 
 你也可以将它clone到你的电脑上，输入
 
