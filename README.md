@@ -26,3 +26,5 @@ MIT License
 · 增加对CF等其它Oj的支持。
 
 · 增加图表显示。
+
+· 添加cache。
