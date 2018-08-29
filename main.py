@@ -11,7 +11,7 @@ def main():
 	sys.stdout.flush()
 
 	user_input = input("Please input your account's name or id.\n")
-	print("Please wait...")
+	print("\nCollecting your info will cost about half a minute,\nPlease wait...\n")
 	try:
 		someone = diff.User(user_input)
 	except ConnectionError:
@@ -31,3 +31,8 @@ def main():
 
 
 main()
+
+
+import msvcrt
+print("Press any ket to exit...")
+msvcrt.getch()

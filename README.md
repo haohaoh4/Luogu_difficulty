@@ -3,16 +3,17 @@
 
 ## 使用方法
 
-如果你还没有安装python，你首先需要[安装](https://www.python.org/)它。
+如果你是windows用户，直接下载编译好的[https://github.com/haohaoh4/Luogu_difficulty/file/main.exe](main.exe)运行即可。
 
-准备好以后，打开文件所在目录(即"cd 目录")，然后输入：
+你也可以将它clone到你的电脑上，输入
 
 ```
-pip install requests
-python main.py
+python main.exe
 ```
 
-即可。接着，你可以输入你的用户名或者uid，大约等待10秒到一分钟，即可完成。
+即可。
+
+接着，你可以输入你的用户名或者uid，大约等待10秒到一分钟，即可完成。
 
 ## License
 
