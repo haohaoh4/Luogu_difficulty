@@ -19,6 +19,7 @@ class User:
 	uid = 0
 	name = ""
 	done_problems = []
+	done_nums = 0
 	done_difficulty = [0 in range(0, 8)]
 	rating = 0
 
@@ -66,4 +67,5 @@ class User:
 			if req[begin:end] == "<head>\n<meta charset=\"utf-8":
 				break
 			logger.debug(req[begin:end])
+			self.done_nums = self.done_nums + 1
 			self.done_problems.append(Problem(req[begin:end]))

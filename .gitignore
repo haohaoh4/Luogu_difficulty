@@ -107,3 +107,6 @@ venv.bak/
 .venv
 
 compile command.bat
+main.spec
+dist/
+build/
