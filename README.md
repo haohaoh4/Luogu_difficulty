@@ -1,19 +1,19 @@
 # Luogu_difficulty
-Í³¼Æ×öÌâÄÑ¶È¡£
+ç»Ÿè®¡åšé¢˜éš¾åº¦ã€‚
 
-## Ê¹ÓÃ·½·¨
+## ä½¿ç”¨æ–¹æ³•
 
-Èç¹ûÄãÊÇwindowsÓÃ»§£¬ÎÞÐè°²×°python£¬Ö±½ÓÏÂÔØ±àÒëºÃµÄ[main.exe](https://github.com/haohaoh4/Luogu_difficulty/blob/master/file/main.exe)ÔËÐÐ¼´¿É¡£
+å¦‚æžœä½ æ˜¯windowsç”¨æˆ·ï¼Œæ— éœ€å®‰è£…pythonï¼Œç›´æŽ¥ä¸‹è½½ç¼–è¯‘å¥½çš„[main.exe](https://github.com/haohaoh4/Luogu_difficulty/blob/master/file/main.exe)è¿è¡Œå³å¯ã€‚
 
-ÄãÒ²¿ÉÒÔ½«Ëücloneµ½ÄãµÄµçÄÔÉÏ£¬ÊäÈë
+ä½ ä¹Ÿå¯ä»¥å°†å®ƒcloneåˆ°ä½ çš„ç”µè„‘ä¸Šï¼Œè¾“å…¥
 
 ```
-python main.exe
+python main.py
 ```
 
-¼´¿É¡£
+å³å¯ã€‚
 
-½Ó×Å£¬Äã¿ÉÒÔÊäÈëÄãµÄÓÃ»§Ãû»òÕßuid£¬Æ½¾ùÃ¿Ò»µÀÄãACµÄÌâÄ¿ÐèÒªµÈ´ý0.3-0.6s£¬¼´¿ÉÍê³É¡£
+æŽ¥ç€ï¼Œä½ å¯ä»¥è¾“å…¥ä½ çš„ç”¨æˆ·åæˆ–è€…uidï¼Œå¹³å‡æ¯ä¸€é“ä½ ACçš„é¢˜ç›®éœ€è¦ç­‰å¾…0.3-0.6sï¼Œå³å¯å®Œæˆã€‚
 
 ## License
 
@@ -21,10 +21,10 @@ MIT License
 
 ## TODO List:
 
-¡¤ Ôö¼ÓÓÃ»§³É¼¨×·×ÙµÄ¹¦ÄÜ¡£
+Â· å¢žåŠ ç”¨æˆ·æˆç»©è¿½è¸ªçš„åŠŸèƒ½ã€‚
 
-¡¤ Ôö¼Ó¶ÔCFµÈÆäËüOjµÄÖ§³Ö¡£
+Â· å¢žåŠ å¯¹CFç­‰å…¶å®ƒOjçš„æ”¯æŒã€‚
 
-¡¤ Ôö¼ÓÍ¼±íÏÔÊ¾¡£
+Â· å¢žåŠ å›¾è¡¨æ˜¾ç¤ºã€‚
 
-¡¤ Ìí¼Ócache¡£
+Â· æ·»åŠ cacheã€‚
